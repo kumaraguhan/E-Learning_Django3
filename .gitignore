@@ -9,3 +9,5 @@ static/
 media/
 
 venv-educa/
+
+*images/
