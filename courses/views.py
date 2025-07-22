@@ -14,6 +14,7 @@ class OwnerEditMixin(object):
         form.instance.owner = self.request.user
         return super().form_valid(form)
 
+
 class OwnerCourseMixin(OwnerMixin, LoginRequiredMixin, PermissionRequiredMixin):
     model = Course
     fields = ['subject', 'title', 'slug', 'overview']
