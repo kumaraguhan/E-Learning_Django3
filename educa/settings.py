@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
     'chat',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'educa.wsgi.application'
+
+ASGI_APPLICATION = 'routing.application'
 
 
 # Database
