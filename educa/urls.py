@@ -5,7 +5,6 @@ from courses.views import CourseListView
 from django.conf import settings
 from django.conf.urls.static import static
 
-
 urlpatterns = [
     path('accounts/login/', auth_views.LoginView.as_view(), 
           name='login'),
