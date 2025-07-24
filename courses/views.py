@@ -199,4 +199,5 @@ class CourseDetailView(DetailView):
                                     initial={'course':self.object})
         return context
 
+
 from django.core.cache import cache
