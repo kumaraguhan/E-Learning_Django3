@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'daphne',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -32,7 +33,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
     'chat',
-    'channels',
+    # 'channels',
 ]
 
 MIDDLEWARE = [
@@ -68,7 +69,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'educa.wsgi.application'
 
-ASGI_APPLICATION = 'routing.application'
+ASGI_APPLICATION = 'educa.asgi.application'
 
 
 # Database
